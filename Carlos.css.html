@@ -1,0 +1,1058 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Shoe Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+       
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Step Into Comfort & Style</h2>
+            <p>Quality shoes for every step you take.</p>
+            <a href="#" class="cta-btn">Click</a>
+        </div>
+    </section>
+
+    <!-- Featured Collections Section -->
+    <section class="featured">
+        <h2>Our Featured Collections</h2>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <img src="images/men_shoes.jpg" alt="Men's">
+                <h3>Men's Sneakers</h3>
+                <a href="#" class="cta-btn">Click</a>
+            </div>
+            <div class="collection-item">
+                <img src="images/womens_shoes.jpg" alt="Women's">
+                <h3>Women's Casual Shoes</h3>
+                <a href="#" class="cta-btn">Click</a>
+            </div>
+            <div class="collection-item">
+                <img src="images/kids_shoes.jpg" alt="Kids' Shoes">
+                <h3>Kids' Shoes</h3>
+                <a href="#" class="cta-btn">Click</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section --><style>/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+header nav ul li a:hover {
+    color: #f701b2;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Featured Collections Section */
+.featured {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.collection-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.collection-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Best Sellers Section */
+.bestsellers {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.bestsellers h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #f701b2;
+}/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+header nav ul li a:hover {
+    color: #f701b2;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Featured Collections Section */
+.featured {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.collection-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.collection-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Best Sellers Section */
+.bestsellers {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.bestsellers h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #f701b2;
+}/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+header nav ul li a:hover {
+    color: #f701b2;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Featured Collections Section */
+.featured {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.collection-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.collection-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Best Sellers Section */
+.bestsellers {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.bestsellers h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #f701b2;
+}/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+header nav ul li a:hover {
+    color: #f701b2;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Featured Collections Section */
+.featured {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.collection-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.collection-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Best Sellers Section */
+.bestsellers {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.bestsellers h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #f701b2;
+}/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+header nav ul li a:hover {
+    color: #f701b2;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Featured Collections Section */
+.featured {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.collection-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.collection-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.collection-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Best Sellers Section */
+.bestsellers {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.bestsellers h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item .cta-btn {
+    background-color: #f701b2;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-item .cta-btn:hover {
+    background-color: #e60099;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #f701b2;
+}</style>
